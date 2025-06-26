@@ -2,7 +2,7 @@
 import pickle as pkl
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
-
+PRINT = True  # Set to False to disable printing and plotting
 class Dataset():
     def __init__(self,normalize=True):
         with open('./data/columns.pkl','rb') as f:
@@ -47,14 +47,16 @@ def main():
     plt.figure(figsize=(15, 10))
     for feature_idx in range(num_features):
         feature_label = dataset.columns[feature_idx] if feature_idx < len(dataset.columns) else f'Feature {feature_idx + 1}'
-        plt.plot(time_steps, first_recording[:, feature_idx], label=feature_label)
+        if not feature_label.split()[0].startswith('sensor'):
+            plt.plot(time_steps, first_recording[:, feature_idx], label=feature_label)
     
     plt.title("All Features over Time")
     plt.xlabel("Time Steps")
     plt.ylabel("Feature Value")
     plt.legend()
     plt.grid()
-    plt.show()
+    if PRINT:
+        plt.show()
 
 
 
