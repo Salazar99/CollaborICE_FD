@@ -1,10 +1,11 @@
-ROAD_PLOT/data/collision.pkl filter=lfs diff=lfs merge=lfs -text
-ROAD_PLOT/data/columns.pkl filter=lfs diff=lfs merge=lfs -text
+DEMO_ICE/gadget_demo.csv filter=lfs diff=lfs merge=lfs -text
+DEMO_ICE/gadget_demo.csv_manipulated.csv filter=lfs diff=lfs merge=lfs -text
+DEMO_ICE/rec2025-06-25T16:38:27.306218.csv filter=lfs diff=lfs merge=lfs -text
+DEMO_ICE/rec2025-06-25T16:38:27.306218.pkl filter=lfs diff=lfs merge=lfs -text
+DEMO_ICE/rec2025-06-25T17:16:13.703301.pkl filter=lfs diff=lfs merge=lfs -text
 ROAD_PLOT/data/control.pkl filter=lfs diff=lfs merge=lfs -text
 ROAD_PLOT/data/training.pkl filter=lfs diff=lfs merge=lfs -text
 ROAD_PLOT/data/velocity.pkl filter=lfs diff=lfs merge=lfs -text
 ROAD_PLOT/data/weight.pkl filter=lfs diff=lfs merge=lfs -text
-rec2025-06-25T16:38:27.306218.csv filter=lfs diff=lfs merge=lfs -text
-rec2025-06-25T17:16:13.703301.csv filter=lfs diff=lfs merge=lfs -text
-rec2025-06-25T16:38:27.306218.pkl filter=lfs diff=lfs merge=lfs -text
-rec2025-06-25T17:16:13.703301.pkl filter=lfs diff=lfs merge=lfs -text
+ROAD_PLOT/data/collision.pkl filter=lfs diff=lfs merge=lfs -text
+ROAD_PLOT/data/columns.pkl filter=lfs diff=lfs merge=lfs -text
